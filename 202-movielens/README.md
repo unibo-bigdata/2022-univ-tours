@@ -1,14 +1,15 @@
-# 303 Spark - Movielens
+# 202 Spark - Movielens
 
-The goal of this lab is to run some analysis on a different dataset, [MovieLens](https://grouplens.org/datasets/movielens/).
+The goal of this lab is to run some analysis on the [MovieLens](https://grouplens.org/datasets/movielens/) dataset.
 
 - [Spark programming guide](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
-- [RDD APIs](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/rdd/RDD.html)
-- [PairRDD APIs](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/rdd/PairRDDFunctions.html)
+- [PySpark RDD APIs](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.html)
 
 This lab's notebook is in the ```material``` folder; the solutions will be released in the same folder.
 
-The cluster configuration should be the same from 301 and 302.
+The cluster configuration is the same from 201.
+- Clone the previous cluster
+- Update the addresses in Putty
 
 Download the dataset [here](https://big.csr.unibo.it/downloads/bigdata/ml-dataset.zip), unzip it and upload the files to S3.
 
@@ -18,5 +19,4 @@ Download the dataset [here](https://big.csr.unibo.it/downloads/bigdata/ml-datase
 
 - ml_ratings.csv (<u>userId</u>:Long, <u>movieId</u>:Long, rating:Double, year:Int)
     - each rating is associated with many tags
-    
 - ml_tags.csv (<u>userId</u>:Long, <u>movieId</u>:Long, <u>tag</u>:String, year:Int) 
